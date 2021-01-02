@@ -5,7 +5,7 @@
 float getDollars(void);
 int countCoins(int cents);
 
-int main (void)
+int main(void)
 {
   float dollars = getDollars();
 
