@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "cs50.h"
 
-void printHash(int number);
-void printSpace(int number);
+void print_hash(int number);
+void print_space(int number);
 
 int main (void)
 {
@@ -15,15 +15,15 @@ int main (void)
   
   for (int row = 1; row <= height; row++)
   {
-    printSpace(height - row);
-    printHash(row);
-    printSpace(2);
-    printHash(row);
+    print_space(height - row);
+    print_hash(row);
+    print_space(2);
+    print_hash(row);
     printf("\n");
   }
 }
 
-void printHash(int number)
+void print_hash(int number)
 {
   for (int hash = 0; hash < number; hash++)
   {
@@ -31,7 +31,7 @@ void printHash(int number)
   }
 }
 
-void printSpace(int number)
+void print_space(int number)
 {
   for (int space = 0; space < number; space++)
   {

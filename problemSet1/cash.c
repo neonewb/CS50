@@ -2,21 +2,21 @@
 #include <math.h>
 #include "cs50.h"
 
-float getDollars(void);
-int countCoins(int cents);
+float get_dollars(void);
+int count_coins(int cents);
 
 int main(void)
 {
-  float dollars = getDollars();
+  float dollars = get_dollars();
 
   int cents = round(dollars * 100);
 
-  int coins = countCoins(cents);
+  int coins = count_coins(cents);
 
   printf("%i coins\n", coins);
 }
 
-float getDollars(void)
+float get_dollars(void)
 {
   float dollars;
   do
@@ -28,7 +28,7 @@ float getDollars(void)
   return dollars;
 }
 
-int countCoins(int cents)
+int count_coins(int cents)
 {
   int coins = 0;
 
