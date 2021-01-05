@@ -44,7 +44,7 @@ int is_invalid(int argNum, string key)
     int mathes = 0;
     for (int j = 0; j < length; j++)
     {
-      if(key[i] == key[j])
+      if(tolower(key[i]) == tolower(key[j]))
       {
         mathes++;
       }
