@@ -41,6 +41,19 @@ int is_invalid(int argNum, string key)
       printf("Key must only contain alphabetic characters.\n");
       return 1;
     }
+    int mathes = 0;
+    for (int j = 0; j < length; j++)
+    {
+      if(key[i] == key[j])
+      {
+        mathes++;
+      }
+    }
+    if (mathes > 1)
+    {
+      printf("Key must not contain repeated characters.\n");
+      return 1;
+    }
   }
   return 0;
 }
