@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include "cs50.h"
+#include <cs50.h>
 
 long get_number(void);
 int get_length(long value);
@@ -14,7 +14,7 @@ int main(void)
 
   int length = get_length(number);
 
-  if (length < 13)
+  if (length < 10)
   {
     printf("INVALID\n");
     return 1;
@@ -25,7 +25,7 @@ int main(void)
   if (last_digit != 0)
   {
     printf("INVALID\n");
-    return 1;
+    return 0;
   }
 
   string card_type = define_card_type(number, length);
